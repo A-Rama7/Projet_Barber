@@ -1,5 +1,6 @@
-@import "./libs/variables.css";
+@import "./libs/variables.scss";
 @import "./libs/base.css";
+@import "./libs/mixin.scss";
 
 
 body{
@@ -20,3 +21,73 @@ body{
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
 }
+
+/*---Navbar---*/
+
+
+.navbar{
+    display: flex;
+    background: rgb(0, 166, 172);
+    @include border($red);
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+    padding: 0 1rem 0 1rem;
+
+    .navbar-links{
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+        
+        @include border($yellow);
+        
+
+        .link{
+            list-style: none;
+            @include border($magenta);
+
+            a{
+                color: #fff;
+                text-decoration: none;
+                font-size: 1.8rem;
+                letter-spacing: 3px;
+            }
+        }
+    }
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    @include border;
+
+
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.burger{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    @include border($green);
+    display: none;
+
+    .line{
+        
+        background: #fff;
+        width: 50px;
+        height: 3.5px;
+        border-radius: 3px;
+    }
+
+    :nth-child(2){
+        margin: 6px 0 6px 0;
+    }
+}
+
+/*---Media queries---*/
+
+@import "media.scss";
