@@ -1,9 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 
 html {
   font-size: 62.5%;
@@ -226,117 +228,4 @@ body > script {
 .skip-links a:focus {
   position: static;
 }
-body {
-  color: #000013;
-  font-family: 'Open sans',sans-serif;
-}
-
-.titles {
-  font-size: 8rem;
-  font-weight: 700;
-  font-family: 'Poppins', sans-serif;
-}
-
-.subtitles {
-  font-size: 6.5rem;
-  font-weight: 700;
-  font-family: 'Poppins', sans-serif;
-}
-
-/*---Navbar---*/
-.navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background: #00a6ac;
-  border: 3px solid red;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 8vh;
-  padding: 0 1rem 0 1rem;
-}
-
-.navbar .navbar-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 3rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 3px solid #ffee00;
-}
-
-.navbar .navbar-links .link {
-  list-style: none;
-  border: 3px solid #ea00ff;
-}
-
-.navbar .navbar-links .link a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.8rem;
-  letter-spacing: 3px;
-}
-
-.logo {
-  width: 100px;
-  height: 100px;
-  border: 3px solid #fff;
-}
-
-.logo img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.burger {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border: 3px solid #00ff0d;
-  display: none;
-}
-
-.burger .line {
-  background: #fff;
-  width: 50px;
-  height: 3.5px;
-  border-radius: 3px;
-}
-
-.burger :nth-child(2) {
-  margin: 6px 0 6px 0;
-}
-
-/*---Media queries---*/
-@media screen and (max-width: 768px) {
-  .navbar-links {
-    position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    top: 105px;
-    left: 50%;
-    right: 50%;
-  }
-  .burger {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=base.css.map */
