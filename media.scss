@@ -1,4 +1,11 @@
-@media screen and(max-width:768px){
+@media screen and(max-width:1050px){
+
+    .navbar{
+        min-width: 85vw;
+        max-width: 85vw;
+        background: aquamarine;
+    }
+    
     .navbar-links{
         position: absolute;
         display: flex;
