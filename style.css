@@ -229,12 +229,14 @@ body > script {
 body {
   color: #000013;
   font-family: 'Open sans',sans-serif;
+  overflow-x: hidden;
 }
 
 .titles {
   font-size: 8rem;
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
 }
 
 .subtitles {
@@ -372,8 +374,30 @@ body {
   -webkit-filter: brightness(40%);
 }
 
-.test {
-  height: 200vh;
+/*---Main_Content---*/
+.wrapper {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  position: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about {
+  background-color: #F7E4D6;
+}
+
+.menu {
+  background-color: #755943;
+}
+
+.staff {
+  background-color: #F5B98C;
+}
+
+.contact {
+  background-color: #36291F;
 }
 
 /*---Media queries---*/
