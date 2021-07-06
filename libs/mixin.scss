@@ -1,8 +1,0 @@
-$red : rgb(255, 0, 0);
-$yellow: rgb(255, 238, 0);
-$green:rgb(0, 255, 13);
-$magenta: rgb(234, 0, 255);
-
-@mixin border ($color: #fff){
-    border: 3px solid $color;
-}

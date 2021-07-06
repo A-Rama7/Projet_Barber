@@ -1,6 +1,6 @@
-@import "./libs/variables.scss";
-@import "./libs/base.scss";
-@import "./libs/mixin.scss";
+@import "./libs/_variables.scss";
+@import "./libs/_base.scss";
+@import "./libs/_mixin.scss";
 
 body{
     
@@ -22,11 +22,9 @@ body{
 }
 
 /*---Navbar---*/
-
-.main-top{
+.header{
     display: flex;
     justify-content: center;
-
 }
 
 .navbar{
@@ -97,19 +95,58 @@ body{
     }
 }
 
-.img-top{
-    width: 100vw;
-    height: 100vh;
+.main-top{
 
-    img{
-        object-fit:cover;
-        object-position: center;
-        width: 100%;
-        height: 100%;
-        filter: brightness(40%);
-        -webkit-filter: brightness(40%)
+    .scroll{
+
+        position: fixed;
+        bottom: 80px;
+        left: 40px;
+        z-index: 1;
+
+        .scroll-line{
+
+            width: 2px;
+            height: 64px;
+            background: #fff;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            // bottom: -80px;
+        }
+
+       .scrolldown{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.6rem;
+        line-height: 1;
+        letter-spacing: 0.3em;
+        // -webkit-writing-mode: vertical-rl;
+        // -ms-writing-mode: tb-rl;
+        // writing-mode: vertical-rl;
+        color: #fff;
+       }
+        
     }
+    
+
+
+    .img-top{
+        width: 100vw;
+        height: 100vh;
+    
+        img{
+            object-fit:cover;
+            object-position: center;
+            width: 100%;
+            height: 100%;
+            filter: brightness(40%);
+            -webkit-filter: brightness(40%)
+        }
+    }
+    
 }
+
 
 .test{
     height: 200vh
@@ -117,4 +154,4 @@ body{
 
 /*---Media queries---*/
 
-@import "media.scss";
+@import "_media.scss";
