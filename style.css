@@ -378,14 +378,65 @@ body {
 .wrapper {
   padding-top: 10vh;
   padding-bottom: 10vh;
-  position: flex;
+}
+
+.wrapper p {
+  font-size: 1.9rem;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.about {
-  background-color: #F7E4D6;
+.about .about_wrapper {
+  width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 10rem;
+}
+
+.about .about_wrapper .img_about {
+  width: 500px;
+}
+
+.about .about_wrapper .text_about {
+  margin-top: 10rem;
+  width: 300px;
+}
+
+.about .about_wrapper .text_about .content_box {
+  margin-top: 3rem;
+  height: 6rem;
+}
+
+.about .about_wrapper .text_about .content_box .btn {
+  display: inline-block;
+  width: 100%;
+  line-height: 6rem;
+  text-align: center;
+  border: 1px solid #36291F;
+  border-radius: 0.2rem;
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #36291F;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.about .about_wrapper .text_about .content_box .btn:hover {
+  background-color: #36291F;
+  color: azure;
+  border-radius: 2.8rem;
 }
 
 .menu {

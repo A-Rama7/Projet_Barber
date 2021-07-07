@@ -23,6 +23,8 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+
+
 /*---Navbar---*/
 .header{
     display: flex;
@@ -155,14 +157,66 @@ body{
 .wrapper{
     padding-top: 10vh;
     padding-bottom: 10vh;
-    position: flex;
-    justify-content: center;
+
+    p{
+        font-size: 1.9rem;
+    }
 }
+
+
 
 .about{
-    background-color: $cream;
 
+    display: flex;
+    justify-content: center;
+
+    .about_wrapper{
+        width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10rem;
+
+        .img_about{
+            width: 500px;
+        }
+    
+        .text_about{
+            margin-top: 10rem;
+            width: 300px;
+
+            .content_box{
+                margin-top: 3rem;
+                height: 6rem;
+
+                .btn{
+                    display: inline-block;
+                    width: 100%;
+                    line-height: 6rem;
+                    text-align: center;
+                    border: 1px solid $dark-brown;
+                    border-radius: 0.2rem;
+                    text-decoration: none;
+                    font-size: 1.7rem;
+                    font-weight:700;
+                    color: $dark-brown;
+                    transition: 0.5s;
+
+                    &:hover{
+                        background-color: $dark-brown;
+                        color: azure;
+                        border-radius: 2.8rem;
+                    }
+                }
+
+                
+            }
+        }
+    }
 }
+
+
+
+
 
 .menu{
     background-color: $brown;
