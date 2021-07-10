@@ -270,7 +270,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   min-width: 20vw;
-  width: 990px;
+  width: 1000px;
   min-height: 8vh;
   z-index: 999;
 }
@@ -376,6 +376,13 @@ body {
 
 /*---Main_Content---*/
 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-top: 15vh;
   padding-bottom: 10vh;
 }
@@ -391,6 +398,16 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.about .back {
+  position: absolute;
+  width: 80vw;
+  height: 43rem;
+  margin: auto;
+  z-index: -1;
+  background-color: #f0eeea;
+  bottom: -70rem;
 }
 
 .about .about_wrapper {
