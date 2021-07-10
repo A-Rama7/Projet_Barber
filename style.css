@@ -442,6 +442,13 @@ body {
 .pre_menu {
   background-color: white;
   padding-bottom: 23vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .pre_menu .img-pre_menu {

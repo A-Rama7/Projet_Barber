@@ -24,7 +24,6 @@ body{
 }
 
 
-
 /*---Navbar---*/
 .header{
     display: flex;
@@ -223,6 +222,8 @@ body{
 .pre_menu{
     background-color: white;
     padding-bottom: 23vh;
+    display: flex;
+    flex-direction: column;
     
     .img-pre_menu{
         margin: auto;
