@@ -402,8 +402,8 @@ body {
 
 .about .back {
   position: absolute;
-  width: 80vw;
-  height: 43rem;
+  width: 85vw;
+  height: 40.5rem;
   margin: auto;
   z-index: -1;
   background-color: #f0eeea;
@@ -466,12 +466,22 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  z-index: 0;
+}
+
+.pre_menu .back2 {
+  position: absolute;
+  width: 60vw;
+  height: 126.5rem;
+  z-index: -1;
+  background-color: #f0eeea;
+  bottom: -290rem;
 }
 
 .pre_menu .img-pre_menu {
   margin: auto;
-  width: 864px;
-  margin-bottom: 84px;
+  width: 845px;
+  margin-bottom: 17.5rem;
 }
 
 .pre_menu .img-pre_menu img {
@@ -489,7 +499,7 @@ body {
   word-spacing: 0.2rem;
   bottom: 450px;
   left: 710px;
-  text-shadow: 0 0px 10px white;
+  text-shadow: 0 0px 15px white;
 }
 
 .pre_menu .pre_menu_headline {
@@ -522,11 +532,22 @@ body {
 }
 
 .menu {
-  background: #36291F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
 }
 
-.menu h1 {
-  color: white;
+.menu .menu_wrapper {
+  width: 1056px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .staff {

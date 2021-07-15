@@ -180,8 +180,8 @@ body{
 
     .back{
         position: absolute;
-        width: 80vw;
-        height: 43rem;
+        width: 85vw;
+        height: 40.5rem;
         margin: auto;
         z-index: -1;
         background-color: $grey ;
@@ -241,11 +241,22 @@ body{
     padding-bottom: 23vh;
     display: flex;
     flex-direction: column;
+    z-index: 0;
+
+    .back2{
+        position: absolute;
+        width: 60vw;
+        height: 126.5rem;
+        // margin: auto;
+        z-index: -1;
+        background-color: $grey;
+        bottom: -290rem;
+    }
     
     .img-pre_menu{
         margin: auto;
-        width: 864px;
-        margin-bottom: 84px;
+        width: 845px;
+        margin-bottom: 17.5rem;
 
         img{
             filter: brightness(80%);
@@ -263,7 +274,7 @@ body{
         word-spacing: 0.2rem;
         bottom: 450px;
         left: 710px;
-        text-shadow: 0 0px 10px rgb(255, 255, 255);
+        text-shadow: 0 0px 15px rgb(255, 255, 255);
     }
 
     .pre_menu_headline{
@@ -285,6 +296,7 @@ body{
     .img-hair-pre_menu{
         margin-left: auto;
         width: 85.4%;
+
         img{
             width: 100%;
             height: 80rem;
@@ -295,11 +307,18 @@ body{
 
 
 .menu{
-background: $dark-brown;
+    display: flex;
+    justify-content: center;
+    background: #fff;
 
-    h1{
-        color: white;
+    .menu_wrapper{
+        width: 1056px;
+        display: flex;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
     }
+
+    
 }
 .staff{
     background-color: $skin;
