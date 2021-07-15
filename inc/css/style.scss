@@ -325,11 +325,16 @@ body{
 }
 
 .contact{
-    background-color: $dark-brown;
+    background-color: $dark-brown;;
 }
 
 
-
+.footer{
+    @include border($color: $skin);
+    background-color: $grey;
+    text-align: center;
+    color: black;
+}
 /*---Media queries---*/
 
 @import "_media.scss";

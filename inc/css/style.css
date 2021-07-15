@@ -558,12 +558,19 @@ body {
   background-color: #36291F;
 }
 
+.footer {
+  border: 3px solid #F5B98C;
+  background-color: #f0eeea;
+  text-align: center;
+  color: black;
+}
+
 /*---Media queries---*/
 @media screen and (max-width: 1050px) {
   .navbar {
     min-width: 85vw;
     max-width: 85vw;
-    background: aquamarine;
+    background: #7ffbff;
   }
   .navbar-links {
     position: absolute;
