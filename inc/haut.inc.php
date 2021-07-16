@@ -23,19 +23,22 @@
             </div>
             <ul class="navbar-links">
                 <li class="link">
-                    <a href="#">About</a>
+                    <a href="<?php echo RACINE_SITE; ?>about.php">About</a>
                 </li>
                 <li class="link">
-                    <a href="#">Menu</a>
+                    <a href="<?php echo RACINE_SITE; ?>menu.php">Menu</a>
                 </li>
                 <li class="link">
-                    <a href="#">Staff</a>
+                    <a href="<?php echo RACINE_SITE; ?>staff.php">Staff</a>
                 </li>
                 <li class="link">
                     <a href="<?php echo RACINE_SITE; ?>boutique.php">Shop</a>
                 </li>
                 <li class="link">
-                    <a href="#">Contact</a>
+                    <a href="<?php echo RACINE_SITE; ?>contact.php">Contact</a>
+                </li>
+                <li class="link">
+                    <a href="<?php echo RACINE_SITE; ?>connexion.php">Connexion</a>
                 </li>
             </ul>
             <div class="burger">
