@@ -23,6 +23,25 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
+.btn{
+    display: inline-block;
+    width: 100%;
+    line-height: 6rem;
+    text-align: center;
+    border: 1px solid $dark-brown;
+    border-radius: 0.2rem;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight:700;
+    color: $dark-brown;
+    transition: 0.5s;
+
+    &:hover{
+        background-color: $dark-brown;
+        color: azure;
+        border-radius: 2.8rem;
+    }
+}
 
 
 
@@ -208,28 +227,6 @@ body{
             .content_box{
                 margin-top: 3rem;
                 height: 6rem;
-
-                .btn{
-                    display: inline-block;
-                    width: 100%;
-                    line-height: 6rem;
-                    text-align: center;
-                    border: 1px solid $dark-brown;
-                    border-radius: 0.2rem;
-                    text-decoration: none;
-                    font-size: 1.7rem;
-                    font-weight:700;
-                    color: $dark-brown;
-                    transition: 0.5s;
-
-                    &:hover{
-                        background-color: $dark-brown;
-                        color: azure;
-                        border-radius: 2.8rem;
-                    }
-                }
-
-                
             }
         }
     }
@@ -310,18 +307,102 @@ body{
     display: flex;
     justify-content: center;
     background: #fff;
+    padding-bottom: 20rem;
 
     .menu_wrapper{
         width: 1056px;
         display: flex;
         padding-top: 10rem;
         padding-bottom: 10rem;
+
+        .text_menu{
+            min-width: 300px;
+            max-width: 300px;
+            z-index: 1;
+            color: white;
+            margin-left: 2rem;
+
+            .content_box{
+                margin-top: 3rem;
+                height: 6rem;
+
+                .btn{
+                    border: 1px solid white;
+                    color: white;
+
+                    &:hover{
+                        background-color: white;
+                        color: $dark-brown;
+                    }
+                }
+            }
+        }
+
+        .menu_img{
+            position: absolute;
+            min-width: 50vw;
+            max-width: 55vw;
+            height: 65rem;
+            overflow: hidden;
+            bottom: -429rem;
+            right: 0;
+            z-index: 1;
+
+            img{
+                max-width: 100%;
+                min-width: 1000px;
+                height: auto;
+                
+            }
+        }
     }
 
-    
+    .back3{
+        position: absolute;
+        width: 68vw;
+        height: 67.5rem;
+        background-color: #36291F;
+        bottom: -414.9rem;
+        left: 0;
+    }
 }
 .staff{
-    background-color: $skin;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12rem;
+    padding-bottom: 12.2rem;
+
+    .staff_wrapper{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        width: 105rem;
+
+        .staff_img{
+            width:40rem;
+
+        }
+        .text_staff{
+            min-width: 300px;
+            max-width: 300px;
+            z-index: 1;
+
+            .content_box{
+                margin-top: 3rem;
+                height: 6rem;
+            }
+        }
+    }
+
+    .back4{
+        position: absolute;
+        width: 40rem;
+        height: 55.5rem;
+        margin: auto;
+        z-index: -1;
+        background-color: $grey;
+        bottom: -511rem;
+    }
 }
 
 .contact{

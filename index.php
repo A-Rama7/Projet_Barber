@@ -58,24 +58,47 @@
 
         <div class="menu">
             <div class="menu_wrapper">
-                <div class="menu_content">
-                    <div class="text_menu">
-                        <h1 class="titles">Menu</h1>
-                        <p>
-                                Lorem ipsum dolor sit, 
-                                amet consectetur adipisicing elit. 
-                                In minus quas dicta quaerat! Cumque quam deserunt deleniti harum. 
-                                Numquam blanditiis aliquam laborum quos veritatis sapiente distinctio 
-                                mollitia amet voluptatem libero.
-                        </p>
-                    </div>
+                <div class="text_menu">
+                    <h1 class="titles">Menu</h1>
+                    <p>
+                            Lorem ipsum dolor sit, 
+                            amet consectetur adipisicing elit. 
+                            In minus quas dicta quaerat! Cumque quam deserunt deleniti harum. 
+                            Numquam blanditiis aliquam laborum quos veritatis sapiente distinctio 
+                            mollitia amet voluptatem libero.
+                    </p>
+                    <div class="content_box">
+                            <a  class= "btn" href="#">Learn more</a>
+                        </div>
                 </div>
-                
+                <div class="menu_img">
+                    <img src="./inc/images/scissors.jpg" alt="scissors">
+                </div>
             </div>
+            <div class="back3"></div>
         </div>
             
         <div class="staff">
-            <h1 class="titles">Staff</h1>
+            <div class="staff_wrapper">
+                <div class="staff_img">
+                    <img src="./inc/images/israel-velis-mjLq6EL8260-unsplash.jpg" alt="staff-profile">
+                </div>
+                <div class="text_staff">
+                    <h1 class="titles">Staff</h1>
+                    <p>
+                            Lorem ipsum dolor sit, 
+                            amet consectetur adipisicing elit. 
+                            <br>
+                            <br>
+                            Numquam blanditiis aliquam laborum quos veritatis sapiente distinctio 
+                            mollitia amet voluptatem libero.
+                    </p>
+                    <div class="content_box">
+                            <a  class= "btn" href="#">Learn more</a>
+                        </div>
+                </div>
+            </div>
+            <div class="back4"></div>
         </div>
 
         <div class="contact">
