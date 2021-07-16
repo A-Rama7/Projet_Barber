@@ -412,10 +412,66 @@ body{
 
 .footer{
     @include border($color: $skin);
-    background-color: $grey;
+    background-color: hsl(240, 100%, 2%);
     text-align: center;
-    color: black;
+    color: white;
+
+    .nav-footer{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+
+        nav{
+            display: flex;
+            align-items: center;
+            min-width: 112px;
+            min-height: 8vh;
+            gap: 1rem;
+        
+            .logo-footer{
+                width: 80px;
+            }
+
+            .contact-footer{
+                p{
+                    font-size: 1.2rem;
+                    margin: 0;
+                }
+            }
+
+            ul{
+                display: flex;
+                margin-top: 0;
+                align-items: center;
+                padding-left: 0;
+        
+                li{
+                    list-style: none;
+
+                    a{
+                        color: white;
+                        text-decoration: none;
+                        font-size: 1.8rem;
+                        letter-spacing: 3px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                    }
+
+                }
+                li:nth-of-type(2)
+                {
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+
+
+   
 }
+
+
+    
 /*---Media queries---*/
 
 @import "_media.scss";

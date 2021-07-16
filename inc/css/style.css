@@ -654,9 +654,68 @@ body {
 
 .footer {
   border: 3px solid #F5B98C;
-  background-color: #f0eeea;
+  background-color: #00000a;
   text-align: center;
-  color: black;
+  color: white;
+}
+
+.footer .nav-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+}
+
+.footer .nav-footer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 112px;
+  min-height: 8vh;
+  gap: 1rem;
+}
+
+.footer .nav-footer nav .logo-footer {
+  width: 80px;
+}
+
+.footer .nav-footer nav .contact-footer p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.footer .nav-footer nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 0;
+}
+
+.footer .nav-footer nav ul li {
+  list-style: none;
+}
+
+.footer .nav-footer nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.footer .nav-footer nav ul li:nth-of-type(2) {
+  margin-left: 1rem;
 }
 
 /*---Media queries---*/

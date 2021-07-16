@@ -100,9 +100,5 @@
             </div>
             <div class="back4"></div>
         </div>
-
-        <div class="contact">
-            <h1 class="titles">Contact</h1>
-        </div>
     </section>
     <?php require_once("inc/bas.inc.php"); ?>
