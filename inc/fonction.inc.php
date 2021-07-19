@@ -12,7 +12,7 @@ function executeRequete($req)
  
 function debug($var, $mode = 1)
 {
-    echo '<div style="background: orange; padding: 5px; float: right; clear: both; ">';
+    echo '<div style="background: orange; padding: 5px; float: right; clear: both; margin-top: 200px; ">';
     $trace = debug_backtrace();
     $trace = array_shift($trace);
     echo 'Debug demandé dans le fichier : $trace[file] à la ligne $trace[line].';

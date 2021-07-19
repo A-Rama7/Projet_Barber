@@ -11,7 +11,7 @@ if($_POST)
     else
     {
         $membre = executeRequete("SELECT * FROM membre WHERE pseudo='$_POST[pseudo]'");
-        if($membre->num_rows > 0)
+        if($membre->rowCount() > 0)
         {
             $contenu .= "<div class='erreur'>Pseudo indisponible. Veuillez en choisir un autre svp.</div>";
         }
