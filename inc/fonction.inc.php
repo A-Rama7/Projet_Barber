@@ -1,11 +1,11 @@
 <?php
 function executeRequete($req)
 {
-    global $mysqli;
-    $resultat = $mysqli->query($req);
+    global $pdo;
+    $resultat = $pdo->query($req);
     if(!$resultat) // 
     {
-        die("Erreur sur la requete sql.<br>Message : " . $mysqli->error . "<br>Code: " . $req);
+        die("Erreur sur la requete sql.<br>Message : " . $pdo->error . "<br>Code: " . $req);
     }
     return $resultat; // 
 }

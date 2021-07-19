@@ -1,8 +1,9 @@
 <?php
 //--------- BDD
-$mysqli = new mysqli("localhost", "root", "", "the_barber");
-if ($mysqli->connect_error) die('Un problème est survenu lors de la tentative de connexion à la BDD : ' . $mysqli->connect_error);
-// $mysqli->set_charset("utf8");
+
+
+$pdo = new PDO('mysql:host=localhost;dbname=the_barber', 'root', '');
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
  
 //--------- SESSION
 session_start();
