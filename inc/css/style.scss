@@ -411,7 +411,7 @@ body{
 
 
 .footer{
-    @include border($color: $skin);
+    // @include border($color: $skin);
     background-color: hsl(240, 100%, 2%);
     text-align: center;
     color: white;
