@@ -15,22 +15,25 @@ if(!empty($_POST))
     {   // debug($_FILES);
         $nom_photo = $_POST['reference'] . '_' .$_FILES['photo']['name'];
         $photo_bdd = RACINE_SITE . "photo/$nom_photo";
-        $photo_dossier = $_SERVER['DOCUMENT_ROOT'] . RACINE_SITE . "/photo/$nom_photo"; 
+        $photo_dossier = $_SERVER['DOCUMENT_ROOT'] . RACINE_SITE . "inc/photo/$nom_photo"; 
         copy($_FILES['photo']['tmp_name'],$photo_dossier);
     }
     foreach($_POST as $indice => $valeur)
     {
         $_POST[$indice] = htmlEntities(addSlashes($valeur));
     }
-    executeRequete("INSERT INTO produit (id_produit, reference, categorie, titre, details, photo, prix, stock)
-    values ('', '$_POST[reference]', '$_POST[categorie]', '$_POST[titre]', '$_POST[details]',  '$photo_bdd',  '$_POST[prix]',  '$_POST[stock]')");
+    executeRequete("INSERT INTO produit (reference, categorie, titre, details, photo, prix, stock)
+    values ('$_POST[reference]', '$_POST[categorie]', '$_POST[titre]', '$_POST[details]', '$photo_bdd', '$_POST[prix]', '$_POST[stock]')");
     $contenu .= '<div class="validation">Le produit a été ajouté</div>';
 }
 //--------------------------------- AFFICHAGE HTML ---------------------------------//
 require_once("../inc/haut.inc.php");
-echo $contenu;
 ?>
+<br><br><br><br><br>
 <h1> Formulaire Produits </h1>
+<br>
+<?php echo $contenu; ?>
+<br><br>
 <form method="post" enctype="multipart/form-data" action="">
     <label for="reference">reference</label><br>
     <input type="text" id="reference" name="reference" placeholder="la référence de produit"> <br><br>
@@ -41,8 +44,8 @@ echo $contenu;
     <label for="titre">titre</label><br>
     <input type="text" id="titre" name="titre" placeholder="le titre du produit"> <br><br>
 
-    <label for="description">description</label><br>
-    <textarea name="description" id="description" placeholder="la description du produit"></textarea><br><br>
+    <label for="details">description</label><br>
+    <textarea name="details" id="details" placeholder="la description du produit"></textarea><br><br>
 
     
     <label for="photo">photo</label><br>
