@@ -4,7 +4,7 @@
             <nav>
                 <div class="logo-footer">
                     <a href="<?php echo RACINE_SITE; ?>index.php">
-                <img src="./inc/images/Logo_barber_white.png" alt="logo"></a>
+                    <img src="<?php echo RACINE_SITE; ?>inc/images/Logo_barber_white.png" alt="logo">
                 </div>
                 <div class="contact-footer">
                 <p>Tel: 06 01 00 02 03</p>

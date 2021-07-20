@@ -22,7 +22,8 @@ if(!empty($_POST))
     {
         $_POST[$indice] = htmlEntities(addSlashes($valeur));
     }
-    executeRequete("INSERT INTO produit (id_produit, reference, categorie, titre, description, couleur, taille, public, photo, prix, stock) values ('', '$_POST[reference]', '$_POST[categorie]', '$_POST[titre]', '$_POST[description]', '$_POST[couleur]', '$_POST[taille]', '$_POST[public]',  '$photo_bdd',  '$_POST[prix]',  '$_POST[stock]')");
+    executeRequete("INSERT INTO produit (id_produit, reference, categorie, titre, details, photo, prix, stock)
+    values ('', '$_POST[reference]', '$_POST[categorie]', '$_POST[titre]', '$_POST[details]',  '$photo_bdd',  '$_POST[prix]',  '$_POST[stock]')");
     $contenu .= '<div class="validation">Le produit a été ajouté</div>';
 }
 //--------------------------------- AFFICHAGE HTML ---------------------------------//
@@ -43,20 +44,6 @@ echo $contenu;
     <label for="description">description</label><br>
     <textarea name="description" id="description" placeholder="la description du produit"></textarea><br><br>
 
-    <label for="couleur">couleur</label><br>
-    <input type="text" id="couleur" name="couleur" placeholder="la couleur du produit"> <br><br>
-
-    <label for="taille">Taille</label><br>
-    <select name="taille">
-        <option value="S">S</option>
-        <option value="M">M</option>
-        <option value="L">L</option>
-        <option value="XL">XL</option>
-    </select><br><br>
-
-    <label for="public">public</label><br>
-    <input type="radio" name="public" value="m" checked>Homme
-    <input type="radio" name="public" value="f">Femme<br><br>
     
     <label for="photo">photo</label><br>
     <input type="file" id="photo" name="photo"><br><br>
