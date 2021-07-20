@@ -15,5 +15,26 @@ $contenu .= 'votre adresse est: ' . $_SESSION['membre']['adresse'] . '</p></div>
 <br><br><br><br><br>
 <h1>Page profil</h1>
 
-<?php echo $contenu; ?>
+<?php echo $contenu; 
+if(internauteEstConnecteEtEstAdmin())
+                    {
+                        echo '
+                        <h3>
+                            <a href="' . RACINE_SITE . 'admin/gestion_membre.php">Gestion des membres</a>
+                        </h3>';
+                        echo '
+                        <h3>
+                            <a href="' . RACINE_SITE . 'admin/gestion_commande.php">Gestion des commandes</a>
+                        </h3>';
+                        echo '
+                        <h3>
+                            <a href="' . RACINE_SITE . 'admin/gestion_boutique.php">Gestion de la boutique</a>
+                        </h3>';
+                        echo '
+                        <h3>
+                            <a href="' . RACINE_SITE . 'connexion.php?action=deconnexion">Se déconnecter</a>
+                        </h3>
+                        ';
+                    }
+?>
 <?php require_once("inc/bas.inc.php"); ?>

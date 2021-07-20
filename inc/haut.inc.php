@@ -34,12 +34,52 @@
                 <li class="link">
                     <a href="<?php echo RACINE_SITE; ?>boutique.php">Shop</a>
                 </li>
-                <li class="link">
-                    <a href="<?php echo RACINE_SITE; ?>contact.php">Contact</a>
-                </li>
-                <li class="link">
-                    <a href="<?php echo RACINE_SITE; ?>connexion.php">Connexion</a>
-                </li>
+
+                <!-- <li class="link">
+                    <a href="<?php //echo RACINE_SITE; ?>connexion.php">Connexion</a>
+                </li> -->
+                <?php
+                    if(internauteEstConnecteEtEstAdmin())
+                    {
+                        echo '
+                        <li class = "link">
+                            <a href="' . RACINE_SITE . 'profil.php">Profil</a>
+                        </li>';
+                        echo '
+                        <li class = "link">
+                            <a href="' . RACINE_SITE . 'connexion.php?action=deconnexion">Deconnexion</a>
+                        </li>
+                        ';
+                    }
+                    if(internauteEstConnecte() && !internauteEstConnecteEtEstAdmin())
+                    {
+                        echo '
+                        <li class = "link">
+                            <a href="' . RACINE_SITE . 'profil.php">Profil</a>
+                        </li>';
+                        echo '
+                        <li class = "link">
+                            <a href="' . RACINE_SITE . 'panier.php">Panier</a>
+                        </li>';
+                        echo '
+                        <li class = "link">
+                            <a href="' . RACINE_SITE . 'connexion.php?action=deconnexion">Deconnexion</a>
+                        </li>
+                        ';
+                    }
+                    elseif(!internauteEstConnecte())
+                    {
+                        echo '
+                        <li class = "link">
+                            <a href="' . RACINE_SITE . 'inscription.php">Inscription</a>
+                        </li>';
+                        echo '
+                        <li class = "link">
+                            <a href="' . RACINE_SITE . 'connexion.php">Connexion</a>
+                        </li>';
+
+                    }
+                    ?>
             </ul>
             <div class="burger">
                 <div class="line line1"></div>
