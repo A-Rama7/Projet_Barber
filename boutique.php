@@ -23,7 +23,7 @@
 ?>
 <?php
 $résultat = $pdo->query("SELECT * FROM produit");
- 
+
 echo "<table border=\"5\"> <tr>";
 for($i=0; $i<$résultat->columnCount(); $i++)
 {
@@ -31,7 +31,7 @@ for($i=0; $i<$résultat->columnCount(); $i++)
     echo '<th>'.$colonne['name'].'</th>';
 }
 echo "</tr>";
- 
+
 while ($ligne = $résultat->fetch(PDO::FETCH_ASSOC))
 {
     echo '<tr>';
