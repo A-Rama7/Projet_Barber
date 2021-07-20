@@ -36,5 +36,13 @@ if(internauteEstConnecteEtEstAdmin())
                         </h3>
                         ';
                     }
+                    elseif(internauteEstConnecte())
+                    {
+                        echo '
+                        <h3>
+                            <a href="' . RACINE_SITE . 'connexion.php?action=deconnexion">Se déconnecter</a>
+                        </h3>
+                        ';
+                    }
 ?>
 <?php require_once("inc/bas.inc.php"); ?>

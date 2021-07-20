@@ -59,13 +59,17 @@
                         </li>';
                         echo '
                         <li class = "link">
-                            <a href="' . RACINE_SITE . 'panier.php">Panier</a>
-                        </li>';
-                        echo '
-                        <li class = "link">
                             <a href="' . RACINE_SITE . 'connexion.php?action=deconnexion">Deconnexion</a>
                         </li>
                         ';
+                        echo '
+                        <li class = "link">
+                            <a href="' . RACINE_SITE . 'panier.php">
+                                <span style="font-size: 30px; color: #F5B98C;">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </span>
+                            </a>
+                        </li>';
                     }
                     elseif(!internauteEstConnecte())
                     {

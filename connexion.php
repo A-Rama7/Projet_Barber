@@ -5,6 +5,15 @@
 
 <?php
     //--------------------------------- TRAITEMENTS PHP ---------------------------------//
+    if(isset($_GET['action']) && $_GET['action'] == "deconnexion")
+{
+    session_destroy();
+}
+if(internauteEstConnecte())
+{
+    header("location:profil.php");
+}
+
 if($_POST)
 {
     // $contenu .=  "pseudo : " . $_POST['pseudo'] . "<br>mdp : " .  $_POST['mdp'] . "";
