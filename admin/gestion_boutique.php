@@ -7,6 +7,7 @@ if(!internauteEstConnecteEtEstAdmin())
     header("location:../connexion.php");
     exit();
 }
+
 //--- ENREGISTREMENT PRODUIT ---//
 if(!empty($_POST))
 {   // debug($_POST);
@@ -25,6 +26,56 @@ if(!empty($_POST))
     executeRequete("INSERT INTO produit (reference, categorie, titre, details, photo, prix, stock)
     values ('$_POST[reference]', '$_POST[categorie]', '$_POST[titre]', '$_POST[details]', '$photo_bdd', '$_POST[prix]', '$_POST[stock]')");
     $contenu .= '<div class="validation">Le produit a été ajouté</div>';
+}
+
+//--- LIENS PRODUITS ---//
+$contenu .= '<a href="?action=affichage">Affichage des produits</a><br>';
+$contenu .= '<a href="?action=ajout">Ajout d\'un produit</a><br><br><hr><br>';
+//--- AFFICHAGE PRODUITS ---//
+if(isset($_GET['action']) && $_GET['action'] == "affichage")
+{
+    $resultat = executeRequete("SELECT * FROM produit");
+    
+    $contenu .= '<h2> Affichage des Produits </h2>';
+    $contenu .= 'Nombre de produit(s) dans la boutique : ' . $resultat->rowCount();
+    $contenu .= '<table border="1"><tr>';
+
+    for($i = 0; $i < $resultat->columnCount(); $i++)
+    {
+        $colonne = $resultat->getColumnMeta($i);
+        $contenu .= '<th>'.$colonne['name'].'</th>';
+    }
+    $contenu .= '<th>Modification</th>';
+    $contenu .= '<th>Supression</th>';
+    $contenu .= '</tr>';
+
+    // while($colonne = $resultat->getColumnMeta())
+    // {    
+    //     $contenu .= '<th>' . $colonne . '</th>';
+    // }
+    // $contenu .= '<th>Modification</th>';
+    // $contenu .= '<th>Supression</th>';
+    // $contenu .= '</tr>';
+
+    while ($ligne = $resultat->fetch(PDO::FETCH_ASSOC))
+    {
+        $contenu .= '<tr>';
+        foreach ($ligne as $indice => $information)
+        {
+            if($indice == "photo")
+            {
+                $contenu .= '<td><img src="' . $information . '" ="70" height="70"></td>';
+            }
+            else
+            {
+                $contenu .= '<td>' . $information . '</td>';
+            }
+        }
+        $contenu .= '<td><a href="?action=modification&id_produit=' . $ligne['id_produit'] .'"><img src="../inc/img/edit.png"></a></td>';
+        $contenu .= '<td><a href="?action=suppression&id_produit=' . $ligne['id_produit'] .'" OnClick="return(confirm(\'En êtes vous certain ?\'));"><img src="../inc/img/delete.png"></a></td>';
+        $contenu .= '</tr>';
+    }
+    $contenu .= '</table><br><hr><br>';
 }
 //--------------------------------- AFFICHAGE HTML ---------------------------------//
 require_once("../inc/haut.inc.php");
