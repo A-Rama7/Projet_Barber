@@ -9,7 +9,7 @@ function executeRequete($req)
     }
     return $resultat; // 
 }
- 
+
 function debug($var, $mode = 1)
 {
     echo '<div style="background: orange; padding: 5px; float: right; clear: both; margin-top: 200px; ">';
