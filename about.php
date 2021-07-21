@@ -72,6 +72,66 @@
             </div>
         </div>
     </section>
-    
+    <section class="concept">
+        <div class="zone_concept">
+            <div class="header_concept">
+                <h1 class="titles">concept</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+            <div class="text_concept">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, 
+                    sapiente reprehenderit!
+                    <br>
+                    Mollitia in possimus commodi, 
+                    maiores sit eum minus nam.
+                <br>
+                <br>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, 
+                sapiente reprehenderit! 
+                Mollitia in possimus commodi, 
+                maiores sit eum minus nam.
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, est.
+                <br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum 
+                corporis ipsam vero ratione.
+                <br>
+                Totam quisquam recusandae commodi nesciunt 
+                ipsam in, debitis, minus ut deserunt expedita quos laboriosam!
+                <br>
+                At consequatur accusamus incidunt facere molestiae quaerat repellendus 
+                perferendis odit saepe nihil
+                <br>
+                et excepturi minus, delectus, 
+                labore eos rerum! Totam odit error unde!
+                </p>
+            </div>
+            <div class="image_concept">
+                <img src="./inc/images/allyson-carter-ClilMdu189E-unsplash.jpg" alt="image concept">
+            </div>
+        </div>
+
+        <div class="counsueling">
+            <div class="image_counsueling">
+                <img src="./inc/images/goods_q1puqo_c_scale,w_672.jpg" alt="image counsueling">
+            </div>
+            <div class="content_counsueling">
+                <div class="title_counsueling">
+                    <h1>Counsueling</h1>
+                </div>
+                <div class="text_counsueling">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Saepe praesentium soluta aspernatur, <br>
+                        a nulla neque atque eligendi velit, 
+                        explicabo cumque accusamus quo. Voluptatibus, laboriosam odio.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
     
 <?php require_once("inc/bas.inc.php"); ?>
