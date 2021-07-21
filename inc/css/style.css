@@ -730,7 +730,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 1050px;
+  width: 1035px;
   margin: 0 auto;
 }
 
@@ -759,9 +759,8 @@ body {
           filter: grayscale(70%);
 }
 
-#passions {
-  /* border: 1px solid magenta; */
-  margin-top: 12rem;
+.hair-space {
+  margin: 12rem auto 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -769,65 +768,72 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 1035px;
 }
 
-#passions .header-passions {
+.hair-space .header_hair-space {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
 }
 
-#passions .header-passions .heading-num {
-  font-size: 2.6rem;
-  color: #f19da2;
-  position: relative;
-  padding-left: 4rem;
-  padding-right: 3.2rem;
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.1;
+.hair-space .header_hair-space .title_hair-space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 15%;
+  margin-right: 15%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#passions .header-passions .heading-num::after {
-  content: "";
-  width: 3rem;
-  height: 4px;
-  background: #020b16;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
+.hair-space .header_hair-space .title_hair-space p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
 }
 
-#passions .header-passions .title_passions {
-  display: inline-block;
-  margin-left: 10%;
-  margin-right: 14%;
-}
-
-#passions .passions_content {
+.hair-space .hair-space_content {
   /* border: 1px solid mediumspringgreen; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 20%;
-  margin-right: 16%;
-  margin-top: 8rem;
+  margin: 8rem 1rem;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3rem;
 }
 
-#passions .passions_content .card_passions {
+.hair-space .hair-space_content .card_hair-space {
   /* border: 1px solid darkcyan; */
   width: 30%;
+  padding: 2rem;
 }
 
-#passions .passions_content .card_passions .image_passions {
-  text-align: center;
+.hair-space .hair-space_content .card_hair-space .image_hair-space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  min-height: 104px;
 }
 
-#passions .passions_content .card_passions .sub_title_passions {
+.hair-space .hair-space_content .card_hair-space .sub_title_hair-space {
   font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -836,15 +842,31 @@ body {
   margin-bottom: 15px;
 }
 
-#passions .passions_content .card_passions .sub_title_passions h3 {
-  font-size: 1.8rem;
+.hair-space .hair-space_content .card_hair-space .sub_title_hair-space h3 {
+  font-size: 4rem;
+  font-weight: 800;
 }
 
-#passions .passions_content .card_passions .text_passions {
+.hair-space .hair-space_content .card_hair-space .text_hair-space {
   text-align: center;
   word-spacing: 7px;
-  line-height: 2;
   color: #828c96;
+}
+
+.hair-space .hair-space_content .card_hair-space .text_hair-space p {
+  line-height: 2;
+}
+
+.concept {
+  margin: 12rem auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1035px;
 }
 
 /*---Media queries---*/

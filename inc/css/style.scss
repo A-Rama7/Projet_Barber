@@ -476,7 +476,7 @@ body{
 
         display: flex;
         flex-direction: column;
-        width: 1050px;
+        width: $zone;
         margin: 0 auto;
 
         .text-title_about{
@@ -505,61 +505,60 @@ body{
     }
 }
 
-#passions{
-    /* border: 1px solid magenta; */
-    margin-top: 12rem;
+.hair-space{
+    // border: 1px solid magenta; 
+    margin: 12rem auto 0;
     display: flex;
     flex-direction: column;
+    width: $zone;
 
-    .header-passions{
+    .header_hair-space{
         display: flex;
+        text-align: center;
 
-        .heading-num{
-            font-size: 2.6rem;
-            color: #f19da2;
-            position: relative;
-            padding-left: 4rem;
-            padding-right: 3.2rem;
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.1;
+        .title_hair-space{
+            display: flex;
+            margin-left: 15%;
+            margin-right: 15%;
+            flex-direction: column;
+            justify-content: center;
 
-            &::after{
-                content: "";
-                width: 3rem;
-                height: 4px;
-                background: #020b16;
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                margin: auto;
+            p{
+                font-size: 2rem;
+                font-weight: bold;
+                margin: 0;
             }
-        }
-
-        .title_passions{
-            display: inline-block;
-            margin-left: 10%;
-            margin-right: 14%;
-        }
+    }
     }
 
-    .passions_content{
+    .hair-space_content{
         /* border: 1px solid mediumspringgreen; */
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        margin-left: 20%;
-        margin-right: 16%;
-        margin-top: 8rem;
+        margin: 8rem 1rem;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
+        justify-content: center;
+        gap: 3rem;
 
-        .card_passions{
+        .card_hair-space{
             /* border: 1px solid darkcyan; */
             width: 30%;
+            padding: 2rem;
 
-            .image_passions{
-                text-align: center;
+            .image_hair-space{
+                
+                display: flex;
+                justify-content: center;
+                align-items: end;
+                min-height: 104px;
+                
+                
             }
 
-            .sub_title_passions{
+            .sub_title_hair-space{
                 font-family: 'Poppins', sans-serif;
                 text-transform: uppercase;
                 letter-spacing: 5px;
@@ -568,20 +567,30 @@ body{
                 margin-bottom: 15px;
             }
 
-            .sub_title_passions h3{
-                font-size: 1.8rem;
+            .sub_title_hair-space h3{
+                font-size: 4rem;
+                font-weight: 800;
             }
 
-            .text_passions{
+            .text_hair-space{
                 text-align:center;
                 word-spacing: 7px;
-                line-height: 2;
                 color: #828c96;
+                    p{
+                        line-height: 2;
+                    }
             }
         }
     }
 }
 
+.concept{
+     // border: 1px solid magenta; 
+    margin: 12rem auto 0;
+    display: flex;
+    flex-direction: column;
+    width: $zone;
+}
     
 /*---Media queries---*/
 
