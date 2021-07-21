@@ -663,13 +663,13 @@ body{
     width: $zone;
     margin: 30rem auto 16rem;
 
-    .content_counsueling{
+    .content_access{
         display: flex;
         flex-direction: column;
         position: relative;
         left: 54px;
 
-        .title_counsueling{
+        .title_access{
 
             h1{
                 font-size: 8rem;
@@ -679,7 +679,7 @@ body{
             }
         }
 
-        .text_counsueling{
+        .text_access{
 
             margin-top: 2rem;
             font-size: 1.6rem;
@@ -694,7 +694,7 @@ body{
         }
     }
 
-    .image_counsueling{
+    .image_access{
         width: 200%;
     }
 }

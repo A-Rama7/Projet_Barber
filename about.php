@@ -135,11 +135,11 @@
     </section>
 
     <section class="access">
-        <div class="content_counsueling">
-            <div class="title_counsueling">
+        <div class="content_access">
+            <div class="title_access">
                 <h1>Access</h1>
             </div>
-            <div class="text_counsueling">
+            <div class="text_access">
                 <p>
                 <span>Tel:</span><br>
                 06 01 00 02 03
@@ -158,7 +158,7 @@
                 </p>
             </div>
         </div>
-        <div class="image_counsueling">
+        <div class="image_access">
             <img src="./inc/images/table_totssw_c_scale,w_762.jpg" alt="image counsueling">
         </div>
     </section>

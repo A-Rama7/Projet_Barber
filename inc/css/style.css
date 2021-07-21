@@ -945,7 +945,7 @@ body {
   margin: 30rem auto 16rem;
 }
 
-.access .content_counsueling {
+.access .content_access {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -957,28 +957,28 @@ body {
   left: 54px;
 }
 
-.access .content_counsueling .title_counsueling h1 {
+.access .content_access .title_access h1 {
   font-size: 8rem;
   font-weight: 800;
   text-transform: uppercase;
   text-shadow: 0px 0px 25px white;
 }
 
-.access .content_counsueling .text_counsueling {
+.access .content_access .text_access {
   margin-top: 2rem;
   font-size: 1.6rem;
   text-shadow: white 1px 0 40px;
 }
 
-.access .content_counsueling .text_counsueling p {
+.access .content_access .text_access p {
   line-height: 2;
 }
 
-.access .content_counsueling .text_counsueling p span {
+.access .content_access .text_access p span {
   font-weight: 800;
 }
 
-.access .image_counsueling {
+.access .image_access {
   width: 200%;
 }
 
