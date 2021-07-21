@@ -203,8 +203,8 @@ body{
         height: 40.5rem;
         margin: auto;
         z-index: -1;
-        // background-color: $grey ;
-        background-color: black;
+        background-color: $grey ;
+        // background-color: black;
         bottom: -70rem;
     }
 
@@ -472,14 +472,115 @@ body{
 .top-about{
     display: block;
 
-    .title-about{
-        margin-top: 100px;
+    .title_about{
+
         display: flex;
-        justify-content: center;
-        background-color: aqua;
+        flex-direction: column;
+        width: 1050px;
+        margin: 0 auto;
+
+        .text-title_about{
+            width: 100%;
+            text-align: center;
+            margin: 16.5rem 0 10rem 0;
+
+            p{
+                width: 75%;
+                margin: 0 auto;
+                font-size: 2.4rem;
+                font-weight: bold;
+                line-height: 1.5;
+            }
+        }
+    }
+    
+    .image_top-about{
+        background: url(../images/apothecary-87-GelJl0gofbc-unsplash.jpg);
+        margin-bottom: 12rem;
+        height: 30rem;
+        height: 50rem;
+        background-size: cover;
+        background-position: right 50% bottom 64%;
+        filter: grayscale(70%);
     }
 }
 
+#passions{
+    /* border: 1px solid magenta; */
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: column;
+
+    .header-passions{
+        display: flex;
+
+        .heading-num{
+            font-size: 2.6rem;
+            color: #f19da2;
+            position: relative;
+            padding-left: 4rem;
+            padding-right: 3.2rem;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.1;
+
+            &::after{
+                content: "";
+                width: 3rem;
+                height: 4px;
+                background: #020b16;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+            }
+        }
+
+        .title_passions{
+            display: inline-block;
+            margin-left: 10%;
+            margin-right: 14%;
+        }
+    }
+
+    .passions_content{
+        /* border: 1px solid mediumspringgreen; */
+        display: flex;
+        margin-left: 20%;
+        margin-right: 16%;
+        margin-top: 8rem;
+        justify-content: space-between;
+
+        .card_passions{
+            /* border: 1px solid darkcyan; */
+            width: 30%;
+
+            .image_passions{
+                text-align: center;
+            }
+
+            .sub_title_passions{
+                font-family: 'Poppins', sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                text-align: center;
+                margin-top: 27px;
+                margin-bottom: 15px;
+            }
+
+            .sub_title_passions h3{
+                font-size: 1.8rem;
+            }
+
+            .text_passions{
+                text-align:center;
+                word-spacing: 7px;
+                line-height: 2;
+                color: #828c96;
+            }
+        }
+    }
+}
 
     
 /*---Media queries---*/

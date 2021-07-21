@@ -27,7 +27,7 @@
                             consequuntur optio id quis expedita ratione tempore?
                         </p>
                         <div class="content_box">
-                            <a  class= "btn" href="#">Learn more</a>
+                            <a  class= "btn" href="about.php">Learn more</a>
                         </div>
                     </div>
                 </div>  
@@ -68,7 +68,7 @@
                             mollitia amet voluptatem libero.
                     </p>
                     <div class="content_box">
-                            <a  class= "btn" href="#">Learn more</a>
+                            <a  class= "btn" href="menu.php">Learn more</a>
                         </div>
                 </div>
                 <div class="menu_img">
@@ -94,7 +94,7 @@
                             mollitia amet voluptatem libero.
                     </p>
                     <div class="content_box">
-                            <a  class= "btn" href="#">Learn more</a>
+                            <a  class= "btn" href="staff.php">Learn more</a>
                         </div>
                 </div>
             </div>
