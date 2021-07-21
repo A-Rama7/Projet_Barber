@@ -133,5 +133,34 @@
             </div>
         </div>
     </section>
+
+    <section class="access">
+        <div class="content_counsueling">
+            <div class="title_counsueling">
+                <h1>Access</h1>
+            </div>
+            <div class="text_counsueling">
+                <p>
+                <span>Tel:</span><br>
+                06 01 00 02 03
+                <br><br>
+                <span>Open:</span><br>
+                10:00 - 19:30
+                <br><br>
+                <span>Close:</span><br>
+                Sunday
+                <br><br>
+                <span>Adress:</span><br>
+                10 rue Diderot<br>
+                Paris<br>
+                France<br>
+
+                </p>
+            </div>
+        </div>
+        <div class="image_counsueling">
+            <img src="./inc/images/table_totssw_c_scale,w_762.jpg" alt="image counsueling">
+        </div>
+    </section>
     
 <?php require_once("inc/bas.inc.php"); ?>
