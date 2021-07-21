@@ -717,6 +717,22 @@ body {
   margin-left: 1rem;
 }
 
+/*---Page About---*/
+.top-about {
+  display: block;
+}
+
+.top-about .title-about {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: aqua;
+}
+
 /*---Media queries---*/
 @media screen and (max-width: 1050px) {
   .navbar {
