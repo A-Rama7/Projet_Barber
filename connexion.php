@@ -1,7 +1,6 @@
 <?php require_once("inc/init.inc.php"); ?>
 <?php require_once("inc/haut.inc.php"); ?>
-    <br><br><br><br>
-    <h1>Connexion</h1>
+
 
 <?php
     //--------------------------------- TRAITEMENTS PHP ---------------------------------//
@@ -44,26 +43,37 @@ if($_POST)
         $contenu .= '<div class="erreur">Erreur de pseudo</div>';
     }
 }
-//--------------------------------- AFFICHAGE HTML ---------------------------------//
 ?>
-<?php require_once("inc/haut.inc.php"); ?>
-<?php echo $contenu; ?>
+//--------------------------------- AFFICHAGE HTML ---------------------------------//
 
-<form method="post" action="">
-    <label for="pseudo">Pseudo</label><br>
-    <input type="text" id="pseudo" name="pseudo"><br> <br>
 
-    <label for="mdp">Mot de passe</label><br>
-    <input type="text" id="mdp" name="mdp"><br><br>
 
-    <input type="submit" value="Se connecter">
-</form>
 
-    <h3>
-        <a href="<?php echo RACINE_SITE; ?>inscription.php">
+<h1 class="title-connexion">Connexion</h1>
+<div class="form-connexion">
+
+    <form method="post" action="">
+        
+        <?php echo $contenu; ?>
+        <br>
+        <label for="pseudo">Pseudo</label><br>
+        <input type="text" id="pseudo" name="pseudo"><br> <br>
+
+        <label for="mdp">Mot de passe</label><br>
+        <input type="text" id="mdp" name="mdp"><br><br>
+
+        <input  class= "btn2 a" type="submit" value="Se connecter">
+        <div>
+        <a  class= "btn2" href="<?php echo RACINE_SITE; ?>inscription.php">
         Inscription
         </a>
-    </h3>
+        </div>
+        
+    </form>
+</div>
+
+
+
 
 
     <?php require_once("inc/bas.inc.php"); ?>

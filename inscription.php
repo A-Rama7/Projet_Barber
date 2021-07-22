@@ -1,4 +1,7 @@
-<?php require_once("inc/init.inc.php");
+<?php require_once("inc/init.inc.php"); ?>
+<?php require_once("inc/haut.inc.php"); ?>
+
+<?php
 //--------------------------------- TRAITEMENTS PHP ---------------------------------//
 if($_POST)
 {
@@ -19,8 +22,7 @@ if($_POST)
         {
             // $_POST['mdp'] = md5($_POST['mdp']);
             // ce code est en commentaire, nous pouvons crypter le mot de passe afin qu'il ne soit pas affiché en clair dans la base de données.
-            // /!\ Attention, si vous activez cette ligne, il faudra penser à ajouter 1 ligne de cryptage au moment de la connexion (le membre envoie son mot de passe, on le recryptera pour le comparer avec la chaine cryptée en base).
-            // Pour la suite du cours, nous ne garderons pas cette ligne et travaillerons avec des mots de passe en clair (le temps de l'entrainement).
+            // /!\ il faudra penser à ajouter 1 ligne de cryptage au moment de la connexion (le membre envoie son mot de passe, on le recryptera pour le comparer avec la chaine cryptée en base).
             foreach($_POST as $indice => $valeur)
             {
                 $_POST[$indice] = htmlEntities(addSlashes($valeur));
@@ -30,44 +32,49 @@ if($_POST)
         }
     }
 }
-//--------------------------------- AFFICHAGE HTML ---------------------------------//
 ?>
-<?php require_once("inc/haut.inc.php"); ?>
+//--------------------------------- AFFICHAGE HTML ---------------------------------//
 
-<br><br><br><br>
-    <h1>Inscription</h1>
-<?php echo $contenu; ?>
 
-<form method="post" action="">
-    <label for="pseudo">Pseudo</label><br>
-    <input type="text" id="pseudo" name="pseudo" maxlength="20" placeholder="votre pseudo" pattern="[a-zA-Z0-9-_.]{1,20}" title="caractères acceptés : a-zA-Z0-9-_." required="required"><br><br>
 
-    <label for="mdp">Mot de passe</label><br>
-    <input type="password" id="mdp" name="mdp" required="required"><br><br>
 
-    <label for="nom">Nom</label><br>
-    <input type="text" id="nom" name="nom" placeholder="votre nom"><br><br>
+<h1 class="title-connexion">Inscription</h1>
 
-    <label for="prenom">Prénom</label><br>
-    <input type="text" id="prenom" name="prenom" placeholder="votre prénom"><br><br>
+<div class="form-inscription">
+    <?php echo $contenu; ?>
 
-    <label for="email">Email</label><br>
-    <input type="email" id="email" name="email" placeholder="exemple@gmail.com"><br><br>
+    <form method="post" action="">
+        <label for="pseudo">Pseudo</label><br>
+        <input type="text" id="pseudo" name="pseudo" maxlength="20" placeholder="votre pseudo" pattern="[a-zA-Z0-9-_.]{1,20}" title="caractères acceptés : a-zA-Z0-9-_." required="required"><br><br>
 
-    <label for="civilite">Civilité</label><br>
-    <input name="civilite" value="m" checked="" type="radio">Homme
-    <input name="civilite" value="f" type="radio">Femme<br><br>
+        <label for="mdp">Mot de passe</label><br>
+        <input type="password" id="mdp" name="mdp" required="required"><br><br>
 
-    <label for="ville">Ville</label><br>
-    <input type="text" id="ville" name="ville" placeholder="votre ville" pattern="[a-zA-Z0-9-_.]{5,15}" title="caractères acceptés : a-zA-Z0-9-_."><br><br>
+        <label for="nom">Nom</label><br>
+        <input type="text" id="nom" name="nom" placeholder="votre nom"><br><br>
 
-    <label for="cp">Code Postal</label><br>
-    <input type="text" id="code_postal" name="code_postal" placeholder="code postal" pattern="[0-9]{5}" title="5 chiffres requis : 0-9"><br><br>
+        <label for="prenom">Prénom</label><br>
+        <input type="text" id="prenom" name="prenom" placeholder="votre prénom"><br><br>
 
-    <label for="adresse">Adresse</label><br>
-    <textarea id="adresse" name="adresse" placeholder="votre adresse" pattern="[a-zA-Z0-9-_.]{5,15}" title="caractères acceptés :  a-zA-Z0-9-_."></textarea><br><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="exemple@gmail.com"><br><br>
 
-    <input type="submit" name="inscription" value="S'inscrire">
-</form>
+        <label for="civilite">Civilité</label><br>
+        <input name="civilite" value="m" checked="" type="radio">Homme
+        <input name="civilite" value="f" type="radio">Femme<br><br>
+
+        <label for="ville">Ville</label><br>
+        <input type="text" id="ville" name="ville" placeholder="votre ville" pattern="[a-zA-Z0-9-_.]{5,15}" title="caractères acceptés : a-zA-Z0-9-_."><br><br>
+
+        <label for="cp">Code Postal</label><br>
+        <input type="text" id="code_postal" name="code_postal" placeholder="code postal" pattern="[0-9]{5}" title="5 chiffres requis : 0-9"><br><br>
+
+        <label for="adresse">Adresse</label><br>
+        <textarea id="adresse" name="adresse" placeholder="votre adresse" pattern="[a-zA-Z0-9-_.]{5,15}" title="caractères acceptés :  a-zA-Z0-9-_."></textarea><br><br>
+
+        <input  class="btn" type="submit" name="inscription" value="S'inscrire">
+    </form>
+</div>
+
 
     <?php require_once("inc/bas.inc.php"); ?>

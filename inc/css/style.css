@@ -318,6 +318,13 @@ body {
   letter-spacing: 3px;
   font-weight: 700;
   text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.header .navbar .navbar-links .link a:hover, .header .navbar .navbar-links .link a:active, .header .navbar .navbar-links .link a.active {
+  border-bottom: 2px solid #0e0e0e;
 }
 
 .logo {
@@ -980,6 +987,112 @@ body {
 
 .access .image_access {
   width: 200%;
+}
+
+/*---Connexion---*/
+.title-connexion {
+  text-align: center;
+  font-weight: 800;
+  margin-top: 10rem;
+}
+
+.form-connexion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f0eeea;
+  max-width: 20vw;
+  min-width: 212px;
+  border: 2px solid darkturquoise;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 18.2vh;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  font-size: 2rem;
+  border-color: #F7E4D6;
+}
+
+.form-connexion #adresse {
+  width: 8rem;
+}
+
+.form-connexion .btn2 {
+  display: inline;
+  padding: 1rem;
+  background-color: #f0eeea;
+  line-height: 6rem;
+  text-align: center;
+  border: 1px solid #36291F;
+  border-radius: 0.2rem;
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #36291F;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.form-connexion .btn2:hover {
+  background-color: #36291F;
+  color: azure;
+}
+
+.form-connexion .a {
+  padding: 0 0.5rem;
+  margin-bottom: 2rem;
+}
+
+/*---Inscription---*/
+.form-inscription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f0eeea;
+  width: 50vw;
+  min-width: 212px;
+  border: 2px solid darkturquoise;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 18.2vh;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  font-size: 2rem;
+  border-color: #F7E4D6;
+}
+
+.form-inscription .btn2 {
+  display: inline;
+  padding: 1rem;
+  background-color: #f0eeea;
+  line-height: 6rem;
+  text-align: center;
+  border: 1px solid #36291F;
+  border-radius: 0.2rem;
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #36291F;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.form-inscription .btn2:hover {
+  background-color: #36291F;
+  color: azure;
+}
+
+.form-inscription .a {
+  padding: 0 0.5rem;
+  margin-bottom: 2rem;
 }
 
 /*---Media queries---*/
