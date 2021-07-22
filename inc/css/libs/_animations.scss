@@ -1,0 +1,43 @@
+/*---NAVBAR---*/
+
+.nav-active
+{
+    transform: translateY(44vh);
+}
+
+
+
+@keyframes navLinksFade {
+    0%{
+        opacity: 0;
+        transform: translateY(50px) translateX(0px);
+    }
+    
+    
+    100% {
+        opacity: 1;
+        transform: translateY(0) translateX(0);
+    }
+}
+
+@keyframes navListFade {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.burger.active .line1 {
+    transform: rotate(45deg) translate(5px, 6px);
+}
+.burger.active .line2 {
+    opacity: 0;
+}
+
+.burger.active .line3 {
+    transform: rotate(-45deg) translate(5px, -6px);
+}

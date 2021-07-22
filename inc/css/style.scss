@@ -110,25 +110,47 @@ body{
     }
 }
 
-.burger{
-    height: 100%;
-    display: flex;
-    cursor: pointer;
-    flex-direction: column;
-    @include border($green);
-    display: none;
+// .burger{
+//     height: 100%;
+//     display: flex;
+//     cursor: pointer;
+//     flex-direction: column;
+//     @include border($green);
+//     display: none;
 
-    .line{
+//     .line{
         
-        background: #fff;
-        width: 50px;
-        height: 3.5px;
-        border-radius: 3px;
+//         background: #fff;
+//         width: 50px;
+//         height: 3.5px;
+//         border-radius: 3px;
+//     }
+
+//     :nth-child(2){
+//         margin: 6px 0 6px 0;
+//     }
+// }
+
+.burger{
+    display: none;
+    cursor: pointer;
+    margin: 0.75rem 2rem;
+}
+
+.burger div {
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background: #fff;
+    transition: all 0.5s ease-in;
     }
 
-    :nth-child(2){
-        margin: 6px 0 6px 0;
-    }
+
+
+
+.navbar-links.active {
+    right: 0;
+    width: 100%;
 }
 
 .main-top{
@@ -707,6 +729,83 @@ body{
 }
 
 
+/*---Menu---*/
+
+.top-menu{
+    display: block;
+
+    .title_menu{
+
+        display: flex;
+        flex-direction: column;
+        width: $zone;
+        margin: 0 auto;
+
+        .text-title_menu{
+            width: 100%;
+            text-align: center;
+            margin: 16.5rem 0 10rem 0;
+
+            p{
+                width: 75%;
+                margin: 0 auto;
+                font-size: 2.4rem;
+                font-weight: bold;
+                line-height: 1.5;
+            }
+        }
+    }
+    
+    .image_top-menu{
+        background: url(../images/scissors.jpg);
+        margin-bottom: 12rem;
+        height: 30rem;
+        height: 50rem;
+        background-size: cover;
+        background-position: right 50% bottom 64%;
+        filter: grayscale(70%);
+    }
+}
+
+.content_menu{
+    display: flex;
+    justify-content: center;
+    .wrapper-menu{
+        width: 1045px;
+
+        .services_menu{
+            margin-top: 10rem;
+            margin-bottom: 10rem;
+            background-color: $dark-brown;
+            border-radius: 10px;
+            padding: 2rem;
+            color: azure;
+
+            ul{
+                list-style: none;
+
+                dl{
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 2rem;
+    
+                    dt{
+                        font-size: 2.5rem;
+                        font-weight: 600;
+                    }
+                    dd{
+                        font-size: 2.5rem;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            
+        }
+    }
+}
+
+
 /*---Connexion---*/
 
 .title-connexion{
@@ -811,3 +910,4 @@ body{
 
 /*---Media queries---*/
 @import "_media.scss";
+@import "./libs/_animations.scss";
