@@ -113,6 +113,7 @@ body{
 .burger{
     height: 100%;
     display: flex;
+    cursor: pointer;
     flex-direction: column;
     @include border($green);
     display: none;

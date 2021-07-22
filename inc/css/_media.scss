@@ -1,5 +1,12 @@
 @media screen and(max-width:1050px){
 
+    body {
+        overflow-x: hidden;
+    }
+    .burger {
+        display: block;
+    }
+    
     .navbar{
         min-width: 85vw;
         max-width: 85vw;
@@ -7,16 +14,27 @@
     }
     
     .navbar-links{
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        top: 105px;
-        left: 50%;
-        right: 50%;
+        // position: absolute;
+        // display: flex;
+        // flex-direction: column;
+        // top: 105px;
+        // left: 50%;
+        // right: 50%;
 
+        position: absolute;
+        width: 100vw;
+        height: 101vh;
+        transform: translateY(-100%);
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background: rgb(148,187,233);
+        background: linear-gradient(0deg, rgba(148,187,233,1) 0%, rgba(238,174,202,1) 65%);
+        transition: transform 0.5s ease-in ;
+        opacity: 0;
     }
 
-    .burger{
-        display: flex;
+    .link{
+        opacity: 0;
     }
 }
