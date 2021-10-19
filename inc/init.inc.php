@@ -9,7 +9,7 @@ $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 session_start();
  
 //--------- CHEMIN
-define("RACINE_SITE","/PROJET_BARBER/");
+define("RACINE_SITE","./");
  
 //--------- VARIABLES
 $contenu = '';
